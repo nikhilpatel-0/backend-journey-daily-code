@@ -14,6 +14,10 @@ app.get('/contact', (req,res)=>{
     res.send("welcome to contact page...")
 })
 
+app.get('/feed', (req, res)=>{
+    res.send("welcome to feed page...")
+})
+
 
 app.listen(3000, ()=>{
     console.log("server is running on port 3000")
