@@ -1,0 +1,13 @@
+/* Centralized theme variables for Day-11 registration form */
+:root {
+  --color-bg: #f9f9fb;
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-text: #222;
+  --color-border: #e5e7eb;
+  --color-input-bg: #fff;
+  --color-input-focus: #dbeafe;
+  --border-radius: 0.75rem;
+  --font-family: 'Inter', Arial, sans-serif;
+  --transition: 0.2s cubic-bezier(.4,0,.2,1);
+}
