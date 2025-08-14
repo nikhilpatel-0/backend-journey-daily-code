@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="/styles/home.css">
+</head>
+<body>
+    <!-- Sidebar Toggle Button (Mobile Only) -->
+    <button id="sidebarToggle" class="mobile-toggle">☰</button>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <button>New Chat</button>
+        <input type="text" placeholder="Search chats">
+    </div>
+
+    <!-- Chat Area -->
+    <div class="chat-area">
+        <div class="messages">
+            <div class="message user">hii</div>
+            <div class="message bot">Hii 😋<br>Kya haal hai? Coding mode on hai ya chill mode?</div>
+        </div>
+        <!-- Input -->
+        <div class="message-input">
+            <input id="messageInput" type="text" placeholder="Ask anything">
+            <button class="mic-btn">send</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js" 
+    integrity="sha384-mkQ3/7FUtcGyoppY6bz/PORYoGqOl7/aSUMn2ymDOJcapfS6PHqxhRTMh1RR0Q6+" 
+    crossorigin="anonymous">
+    </script>
+    <script>
+        const socket = io();
+    </script>
+    <script src="/scripts/chat.js"></script>
+</body>
+</html>
